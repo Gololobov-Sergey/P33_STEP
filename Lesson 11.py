@@ -62,7 +62,7 @@ print(s)'''
 for elem in list3:
     if elem > maxValue:
         maxValue = elem
-print(max)'''
+print(maxValue)'''
 
 #print(max(list3))
 #print(min(list3))
