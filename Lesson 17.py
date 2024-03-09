@@ -74,15 +74,15 @@ def power(a, b):
 listOper = [plus, minus, mult, division, mod, power]
 oper = ['+', '-', '*', '/', '%', '^']
 
-a = int(input("a = "))
-b = int(input("b = "))
-op = input("op - ")
-if op in oper:
-    print(f"{a} {op} {b} = {listOper[oper.index(op)](a,b)}")
+expr = input()
+for op1 in oper:
+    if op1 in expr:
+        var = expr.split(op1)
+        print(f"{int(var[0])} {op1} {int(var[1])} = {listOper[oper.index(op1)](int(var[0]), int(var[1]))}")
 else:
     print("Not operation!")
 
-2+6
+
 
 
 
